@@ -192,6 +192,8 @@ h4 { font-size: 1.05rem; }
 .logo-text { display: flex; flex-direction: column; line-height: 1.2; }
 .logo-name { font-size: 1rem; font-weight: 800; color: var(--color-dark); }
 .logo-location { font-size: .75rem; font-weight: 500; color: var(--color-primary); }
+.logo-img { height: 54px; width: auto; display: block; }
+.logo-img-footer { height: 70px; width: auto; display: block; background: #fff; border-radius: 8px; padding: 4px; }
 
 .main-nav { margin-left: auto; }
 .main-nav ul {
