@@ -167,8 +167,13 @@ h4 { font-size: 1.05rem; }
 .header-inner {
   display: flex;
   align-items: center;
-  gap: 32px;
-  height: 72px;
+  gap: 24px;
+  height: 80px;
+}
+.logo {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
 }
 .logo a {
   display: flex;
@@ -192,8 +197,8 @@ h4 { font-size: 1.05rem; }
 .logo-text { display: flex; flex-direction: column; line-height: 1.2; }
 .logo-name { font-size: 1rem; font-weight: 800; color: var(--color-dark); }
 .logo-location { font-size: .75rem; font-weight: 500; color: var(--color-primary); }
-.logo-img { height: 54px; width: auto; display: block; }
-.logo-img-footer { height: 70px; width: auto; display: block; background: #fff; border-radius: 8px; padding: 4px; }
+.logo-img { height: 62px; max-height: 62px; width: auto; max-width: 220px; display: block; object-fit: contain; }
+.logo-img-footer { height: 68px; max-height: 68px; width: auto; max-width: 200px; display: block; object-fit: contain; background: #fff; border-radius: 8px; padding: 6px; }
 
 .main-nav { margin-left: auto; }
 .main-nav ul {
@@ -508,7 +513,7 @@ a.contact-value:hover { color: var(--color-primary); }
 }
 .footer-brand .footer-logo {
   display: flex;
-  flex-direction: column;
+  align-items: flex-start;
   line-height: 1.2;
   margin-bottom: 16px;
 }
@@ -573,7 +578,7 @@ a.contact-value:hover { color: var(--color-primary); }
   .main-nav {
     display: none;
     position: absolute;
-    top: 72px;
+    top: 80px;
     left: 0;
     right: 0;
     background: var(--color-bg);
@@ -786,7 +791,7 @@ a.contact-value:hover { color: var(--color-primary); }
 /* --- Sidebar --- */
 .sidebar {
   position: sticky;
-  top: 92px;
+  top: 100px;
 }
 
 .sidebar-card {
